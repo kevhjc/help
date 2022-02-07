@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 div {
-  padding-top: 20px;
+  padding-top: 10px;
   justify-content: left;
   align-items: left;
 }
@@ -51,6 +51,8 @@ a {
 }
 h2 {
   color: #222222;
+  padding-top: -5px;
+  padding-bottom: -10px;
   letter-spacing: 1px;
 }
 ul {
@@ -86,41 +88,46 @@ input {
 button {
   color: #fff;
   width: 80px;
-  background-color: #ff1a1a;
-  border: 0.5px solid #ff1a1a;
+  background-color: #151515;
+  border: 0.5px solid #151515;
   border-radius: 3px;
-  padding: 6.5px 15px;
-  letter-spacing: 1px;
-  margin-left: 25px;
+  /* padding: 6.5px 15px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15px;
   cursor: pointer;
   font-family: Arial;
-  box-shadow: var(--shadow-elevation-high);
+  text-decoration: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-elevation-medium);
 }
 button:hover {
-  background-color: #ff1a1a;
-  border: 0.5px solid #ff1a1a;
+  background-color: #262626;
+  border: 0.5px solid #262626;
   transition-duration: 0.5s;
-  box-shadow: var(--shadow-elevation-high);
+  box-shadow: var(--shadow-elevation-medium);
 }
 button.heart {
   color: #fff;
   width: auto;
-  background-color: #ff1a1a;
-  border: 0.5px solid #ff1a1a;
+  background-color: #ff4040;
+  border: 0.5px solid #ff4040;
   border-radius: 3px;
-  /* padding: 6.5px 15px; */
   align-items: center;
   text-align: center;
-  letter-spacing: 1px;
   cursor: pointer;
+  margin-top: 15px;
   font-family: Arial;
-  box-shadow: var(--shadow-elevation-high);
+  margin-left: 0px !important;
+
+  box-shadow: var(--shadow-elevation-low);
 }
 button.heart:hover {
   background-color: #ff1a1a;
   border: 0.5px solid #ff1a1a;
   transition-duration: 0.5s;
-  box-shadow: var(--shadow-elevation-high);
+  box-shadow: var(--shadow-elevation-medium);
 }
 button.delete {
   color: #ff1a1a;
@@ -195,22 +202,7 @@ button.favorites:hover {
   border-radius: 5px;
   box-shadow: var(--shadow-elevation-medium);
 }
-#title {
-  font-size: 150%;
-  font-family: 'Rock Salt', cursive;
-}
+
 #yelp {
-  height: 150px;
-  margin-top: 50px;
-}
-header {
-  position: fixed;
-  left: 0;
-  right: 0px;
-  top: 0;
-  padding: 15px;
-  width: 100%;
-  background: #ff1a1a;
-  color: rgb(238, 238, 238);
-  text-align: center;
+  height: 120px;
 }

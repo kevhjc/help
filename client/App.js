@@ -12,8 +12,6 @@ const App = () => {
   const [threeOptions, setOptions] = useState([]);
   const [allFavorites, setFavorite] = useState([]);
 
-  // const [this.state, setState()] = useState(initial state)
-
   useEffect(() => {
     axios.get('http://localhost:3000/api/favorites').then((res) => {
       setFavorite(res.data);
@@ -65,7 +63,7 @@ const App = () => {
               key='location'
               onChange={onChangeHandler}
               value={addRestaurant.location}
-              placeholder='Ask Yelp for Help'
+              placeholder='Search by location'
             />
           </form>
           <button
@@ -74,7 +72,7 @@ const App = () => {
               handleSearchLocation(addRestaurant);
             }}
           >
-            Yum
+            Search
           </button>
         </div>
         <div>
@@ -95,7 +93,7 @@ const App = () => {
             key='location'
             onChange={onChangeHandler}
             value={addRestaurant.location}
-            placeholder='Ask Yelp for Help'
+            placeholder='Search by location'
           />
         </form>
         <button

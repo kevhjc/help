@@ -1,25 +1,17 @@
 {
-  "name": "unbeatable",
+  "name": "help",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open\" \"cross-env NODE_ENV=development nodemon server/server.js\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Velocirabbit2/unBEATable.git"
+    "url": "git+https://github.com/kevhjc/help.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Velocirabbit2/unBEATable/issues"
-  },
-  "homepage": "https://github.com/Velocirabbit2/unBEATable#readme",
   "dependencies": {
     "axios": "^0.24.0",
     "concurrently": "^6.4.0",

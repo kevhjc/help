@@ -5,14 +5,6 @@ const Cards = (props) => {
   return (
     <div className='cards'>
       <div id='card'>
-        <button
-          className='heart'
-          onClick={() => {
-            props.addToFavorites(props.searchResults);
-          }}
-        >
-          Like
-        </button>
         <div>
           <img src={props.searchResults.image_url} />
         </div>
@@ -32,6 +24,14 @@ const Cards = (props) => {
           <b>Price: </b>
           {props.searchResults.price}
         </div>
+        <button
+          className='heart'
+          onClick={() => {
+            props.addToFavorites(props.searchResults);
+          }}
+        >
+          Add to Favorites
+        </button>
       </div>
     </div>
   );
